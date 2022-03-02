@@ -16,15 +16,12 @@
     }
     if(n==sum)
     {
-        cout<<n<<" is a Perfect Number"<<endl;
+        cout<<n<<" IS A PERFECT NUMBER"<<endl;
     }
     else
     {
-        cout<<n<<" is not a Perfect Numeber"<<endl;
-    }
-    
-
-    
+        cout<<n<<" IS NOT A PERFECT NUMBER"<<endl;
+    }  
 }
     int main ()
 {
