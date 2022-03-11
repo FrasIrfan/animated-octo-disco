@@ -1,48 +1,40 @@
     #include <iostream>
+    #include <string>
     #include <sstream>
+    #include <algorithm>  //used here for using reverse string function.
     using namespace std;
     void decimalToBinary(){
 
     //specifically made for the number 58
     //Binary=010110
+    //111010
 
-int n,i,rem,rem2,rem3,rem4,rem5,rem6;
+int n,i,rem;
 string binary ;
     cout<<"Decimal to Binary Conversion"<<endl;
     cout<<"Enter Number"<<endl;
     cin>>n;
-    binary = "";
+    binary = ""; //empty value
 
-    for(i=0;i<5;i++)
+    for(i=0;i<6;i++)
 {
     stringstream ss;
-    rem=n%2;
-     n=n/2;
+    rem=n%2; //modulus
+     n=n/2; //quotient
      
-     cout<<"rem = "<<rem<<endl;
+     //cout<<"rem = "<<rem<<endl;
      ss<<rem;
      string s;
-     ss>>s;
-      binary=binary+(s);
+     ss>>s; //syntax of stringstream
+     //string s;
+     ss>>s; //syntax of stringstream
+      binary=binary+(s); //concatination
 }
 
-//string binary = rem;
-     cout<<binary<<endl; 
+    reverse(binary.begin(),binary.end()); //reverse of a string
+    cout<<binary<<endl; 
 
-/*    rem1=n%2;   //0
-n=n/2; //29
-    rem2=n%2;  //1
-n=n/2;    //14
-    rem3=n%2;  //0
-n=n/2;    //7
-    rem4=n%2;  //1
-n=n/2;    //3
-    rem5=n%2;  //1
-n=n/2;    //1
-    //rem6=n4%2;  
 
-    cout<<"Binary = "<<rem1<<rem2<<rem3<<rem4<<rem5<<rem6<<endl;
-*/
     }
     int main()
 
