@@ -3,11 +3,9 @@
     void decimalToBinary(){
 
 int n,i,rem;
-//string binary ;
     cout<<"Decimal to Binary Conversion"<<endl;
     cout<<"Enter Number"<<endl;
     cin>>n; //9
-    //binary = ""; //empty value
 
     for(i=0;i<100;i++)
 {
@@ -26,11 +24,6 @@ int n,i,rem;
     
 }
     cout <<n<<endl;
-
-    //reverse(binary.begin(),binary.end()); //reverse of a string
-    //cout<<binary<<endl; 
-
-
     }
     int main()
 
