@@ -30,12 +30,7 @@ int n,i,rem;
      else if (n == 0){ //4 false 2 false
          break; 
      }
-    // ss<<rem;
-     //string s;
-    // ss>>s; //syntax of stringstream
-     //string s;
-    // ss>>s; //syntax of stringstream
-      //ss=ss+(rem); //concatination
+    
 }
 cout <<n<<endl;
 
