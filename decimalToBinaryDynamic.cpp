@@ -3,9 +3,10 @@
     void decimalToBinary(){
 
 int n,i,rem;
+
     cout<<"Decimal to Binary Conversion"<<endl;
     cout<<"Enter Number"<<endl;
-    cin>>n; //9
+    cin>>n; 
 
     for(i=0;i<100;i++)
 {
@@ -23,7 +24,12 @@ int n,i,rem;
      }
     
 }
-    cout <<n<<endl;
+    cout <<"rem = " << n << endl;
+    cout << "Binary = " << n << rem << rem << rem << endl;
+
+    
+
+
     }
     int main()
 
