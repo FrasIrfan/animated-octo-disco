@@ -25,7 +25,7 @@ int n,i,rem;
     
 }
     cout <<"rem = " << n << endl;
-    cout << "Binary = " << n << rem << rem << rem << endl;
+    cout << "Binary = " << n << rem << rem << rem << endl; // here is the problem 
 
     
 
