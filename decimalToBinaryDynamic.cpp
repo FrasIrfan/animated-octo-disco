@@ -11,7 +11,7 @@ int n,i,rem;
     for(i=0;i<100;i++)
 {
     rem=n%2; //modulus 9%2=1   //4%2 = 0 //2%2 = 0
-     n=n/2; //quotient 9/2=4  //4=2 = 2  //2/2 =
+     n=n/2; //quotient 9/2=4  //4=2 = 2  //2/2 = 1
 
      
      cout<<"rem = "<<rem<<endl; //rem = 1
