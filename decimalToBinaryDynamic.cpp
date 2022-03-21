@@ -1,41 +1,43 @@
-    #include <iostream>
-    using namespace std;
-    void decimalToBinary(){
+#include <iostream>
+#include <algorithm>
+using namespace std;
 
-int n,i,rem;
+void decimalToBinary() {
 
-    cout<<"Decimal to Binary Conversion"<<endl;
-    cout<<"Enter Number"<<endl;
-    cin>>n; 
+    int n, rem;
+    string binary; // This will store our binary number
 
-    for(i=0;i<100;i++)
-{
-    rem=n%2; //modulus 9%2=1   //4%2 = 0 //2%2 = 0
-     n=n/2; //quotient 9/2=4  //4=2 = 2  //2/2 =1
+    cout << "Decimal to Binary Conversion" << endl;
+    cout << "Enter Number" << endl;
+    cin >> n;
 
-     
-     cout<<"rem = "<<rem<<endl; //rem = 1
+    for (int i = 0; i < 100; i++)
+    {
+        rem = n % 2;
+        n = n / 2;
 
-     if (n == 1){ //4 false //2 false //1 true
-         break;
-     } 
-     else if (n == 0){ //4 false 2 false
-         break; 
-     }
-    
+        cout << "rem = " << rem << endl;
+        binary.push_back(std::to_string(rem)[0]);
+
+        if (n == 1) {
+            break;
+        }
+        else if (n == 0) {
+            break;
+        }
+    }
+
+    cout << "rem = " << n << endl;
+
+    reverse(binary.begin(), binary.end()); // Reverse the string `binary`
+    cout << "Binary = " << n << binary << endl;
 }
-    cout <<"rem = " << n << endl;
-    cout << "Binary = " << n << rem << rem << rem << endl; // here is the problem 
 
-    
+    int main ()
+    {
+
+        decimalToBinary();
+        return 0;
 
 
     }
-    int main()
-
-{
-
-    decimalToBinary();
-
-    return 0;
-}
