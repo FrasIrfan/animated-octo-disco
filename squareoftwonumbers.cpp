@@ -10,6 +10,7 @@ square = number * number;
 cout << "Square of " << number << " is = " << square;
 
 }
+
 int main()
 {
 squareOftwoNumbers();
