@@ -59,12 +59,5 @@ int main()
     default:
     cout<<"You entered wrong input"<<endl;
     }
-
-
-
-
-
-
-
 return 0;
 }
