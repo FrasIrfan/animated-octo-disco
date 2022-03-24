@@ -19,10 +19,15 @@ void decimalToBinary() {
         cout << "rem = " << rem << endl;
         binary.push_back(std::to_string(rem)[0]);
 
-        if (n == 1) {
+        if (n == 1) 
+        
+        {
             break;
         }
-        else if (n == 0) {
+        
+        else if (n == 0) 
+        
+        {
             break;
         }
     }
