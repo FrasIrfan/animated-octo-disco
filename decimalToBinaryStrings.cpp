@@ -33,7 +33,6 @@ void decimalToBinary() {
     }
 
     cout << "rem = " << n << endl;
-
     reverse(binary.begin(), binary.end()); // Reverse the string `binary`
     cout << "Binary = " << n << binary << endl;
 }
